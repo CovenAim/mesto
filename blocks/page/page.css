@@ -1,5 +1,6 @@
 .page {
     max-width: 100%;
+    /* background: #FFFFFF; */
     background: #000000;
     margin: 0;
     font-family: 'Inter', 'Arial', sans-serif;
@@ -12,7 +13,7 @@
     -moz-text-size-adjust: 100%;
     -moz-osx-font-smoothing: grayscale;
   }
-
+/* 
   header, div, p, img, button, h1 {
     border: 1px solid red;
-  }
+  } */

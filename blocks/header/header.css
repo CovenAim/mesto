@@ -8,3 +8,10 @@
     justify-content: flex-start;
     align-items: flex-start;
 }
+
+/* @media screen and (max-width: 320px) {
+    .header {
+      max-width: 90%;
+     
+    }
+  }  */
