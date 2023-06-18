@@ -1,13 +1,15 @@
 .profile__add_button {
   min-width: 150px;
-  min-height: 50px;
-  
+  height: 50px;
+  padding: 0;
   cursor: pointer;
-  background-image: url(../../../image/add_button.svg);
+
+  background-image: url(../../../image/add_button1.svg);
   object-fit: cover;
+  background-size: 22px 22px;
   background-repeat: no-repeat;
-  background-position: center;
-  
+  background-position: 50% 50%;
+  background-color: transparent;
   background-color: #000000;
   border: none;
   border: 2px solid #FFFFFF;
@@ -16,9 +18,15 @@
 
 @media screen and (max-width: 1050px) {
   .profile__add_button {
-    width: 282px;
-    margin: 0 19px;
+    margin: 0 auto;
     
+  }
+}
+
+@media screen and (max-width: 750px) {
+  .profile__add_button {
+      width: 282px;
+      background-size: 16px 16px;
   }
 }
 
