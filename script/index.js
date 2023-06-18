@@ -1,8 +1,8 @@
 // Находим форму в DOM
 const profileEditButton = document.querySelector('.profile__about');
-const popupCloseButton = document.querySelector('.popup__close_button');
+const popupCloseButton = document.querySelector('.popup__close-button');
 const popupElement = document.querySelector('.popup');
-const popupSubmitData = document.querySelector('.popup__submit_button');
+const popupSubmitData = document.querySelector('.popup__submit-button');
 const nameInput = document.querySelector('.popup__input_name');
 const jobInput = document.querySelector('.popup__input_job');
 const profileName = document.querySelector('.profile__name')

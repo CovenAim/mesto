@@ -2,7 +2,6 @@
   display: grid;
   max-width: 880px;
   margin: 51px auto 0;
-  /* grid-template-columns: repeat(auto-fit, minmax(2fr, 1fr)); */
   grid-template-columns: 2fr 2fr 2fr;
   grid-template-rows: 2fr 2fr;
   justify-content: center;
