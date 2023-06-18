@@ -1,6 +1,10 @@
 .profile__name {
     max-width: 294px;
-    max-height: 39px;
+    width: 100%;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+    overflow: hidden;
+    
     
     margin: 0;
     padding: 0;
@@ -13,4 +17,14 @@
   
     color: #FFFFFF;
     background-color: #000000;
+  }
+
+  @media screen and (max-width: 750px) {
+    .profile__name {
+    line-height: 33px;
+    text-align: center;
+    width: 189px;
+    font-size: 27px;
+    text-align: center;
+    }
   }

@@ -1,7 +1,11 @@
-.logo {
-  margin: 0 auto;
-  max-width: 142px;
-  max-height: 33px;
+.header__logo {
+  display: flex;
+}
 
-  background: #FFFFFF; 
+@media screen and (max-width: 750px) {
+  .header__logo {
+    width: 104px;
+    height: 24px;
+    /* margin: 28px auto 32px 27px; */
+  }
 }

@@ -1,6 +1,6 @@
 .profile__info {
   display: grid;
-  width: 336px;
+  max-width: 336px;
   height: 73px;
   margin: 0;
   margin-right: auto;
@@ -9,4 +9,17 @@
   align-items: center;
   flex-direction: column;
   gap: 16px 18px
+}
+
+@media screen and (max-width: 750px) {
+  .profile__info {
+    display: grid;
+    justify-content: center;
+    
+    max-width: 282px;
+    grid-template-rows: 1fr 1fr;
+    grid-template-columns: 189px 20px;
+    margin: 0 auto 36px auto;
+    gap: 14px 10px;
+  }
 }
