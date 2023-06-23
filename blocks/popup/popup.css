@@ -9,15 +9,4 @@
   display: none;
   align-items: center;
   justify-content: center;
-
 }
-
-/* @media screen and (max-width: 320px) {
-  .popup {
-  width: 282px;
-  height: 322px;
-
-  left: 19px;
-  top: 123px;
-  }
-} */

@@ -1,9 +1,0 @@
-.element__heart {
-    width: 24px;
-    height: 19px;
-    cursor: pointer;
-}
-
-.element__heart:hover {
-    opacity: 0.5;
-}

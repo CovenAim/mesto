@@ -1,5 +1,4 @@
 .profile__profession {
-
   max-width: 400px;
   margin: 0;
   padding-top: 10px;
@@ -10,22 +9,6 @@
   text-overflow: ellipsis;
   white-space: nowrap;
   overflow: hidden;
-  /* width: 336px;
-  margin: 0;
-  padding: 0;
-  text-overflow: ellipsis;
-  white-space: nowrap;
-  overflow: hidden;
-
-  font-family: 'Inter';
-  font-style: normal;
-  font-weight: 400;
-  font-size: 18px;
-  line-height: 22px;
-  border: none; */
-
-  /* color: #FFFFFF;
-  background-color: #000000; */
 } 
 
 @media screen and (max-width: 950px) {
@@ -33,10 +16,5 @@
     max-width: 170px;
     font-size: 14px;
     line-height: 17px;
-    
-    /* font-size: 14px;
-    line-height: 17px;
-    text-align: center;
-    max-width: 159px; */
   }
 }

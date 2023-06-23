@@ -1,13 +1,14 @@
 // Находим форму в DOM
-const profileEditButton = document.querySelector('.profile__about');
+const profileEditButton = document.querySelector('.profile__edit-button');
 const popupCloseButton = document.querySelector('.popup__close-button');
 const popupElement = document.querySelector('.popup');
 const popupSubmitData = document.querySelector('.popup__submit-button');
-const nameInput = document.querySelector('.popup__input_name');
-const jobInput = document.querySelector('.popup__input_job');
+const nameInput = document.querySelector('.popup__input_name_status');
+const jobInput = document.querySelector('.popup__input_job_status');
 const profileName = document.querySelector('.profile__name')
 const profileProfession = document.querySelector('.profile__profession');
 const popupForm = document.querySelector('.popup__content');
+const heartIconActive = document.querySelector('.element__button_active');
 
 
 function handleClick(evt) {
@@ -19,7 +20,7 @@ function handleClick(evt) {
 }
 
 function openPopup () {
-    popupElement.classList.toggle('popup__opened')
+    popupElement.classList.toggle('popup_opened')
 }
 
 profileEditButton.addEventListener('click', () => {
@@ -34,3 +35,9 @@ popupCloseButton.addEventListener('click', () => {
 });
 
 popupForm.addEventListener('submit', handleClick)
+
+
+
+
+
+

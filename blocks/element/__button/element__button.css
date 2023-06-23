@@ -1,4 +1,19 @@
 .element__button {
+  flex-shrink: 0;
   border: 0;
   background: transparent;
+  background-repeat: no-repeat;
+  background-position: center;
+  object-fit: contain;
+
+  
+
+  background-image: url(../../../images/heart-icon.svg);
+  width: 24px;
+  height: 19px;
+  cursor: pointer;
+}
+
+.element__button:hover {
+  opacity: 0.5;
 }

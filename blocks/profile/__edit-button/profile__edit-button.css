@@ -6,17 +6,20 @@
     padding: 0;
 
     cursor: pointer;
-    background-image: url(../../../image/edit_icon.svg);
+    background-image: url(../../../images/edit_icon.svg);
+    
     background-repeat: no-repeat;
     background-position: center;
     background-color: transparent;
     border: 1px solid #FFFFFF;
 }
 
+
 @media screen and (max-width: 750px) {
     .profile__edit-button {
         min-width: 18px;
         height: 18px;
+        background-size: 7.5px;
     }
   }
 

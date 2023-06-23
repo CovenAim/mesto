@@ -1,0 +1,7 @@
+.element__button_active {
+    display: flex;
+    background: url(../../../images/active_heart.svg);
+    background-position: center;
+    object-fit: contain;
+    background-repeat: no-repeat;
+}
