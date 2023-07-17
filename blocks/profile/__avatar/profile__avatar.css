@@ -2,8 +2,8 @@
   width: 120px;
   height: 120px;
   margin-right: 30px;
-  object-position: contain;
-  object-fit: contain;
+  object-position: left;
+  object-fit: cover;
   border-radius: 50%;
 }
 

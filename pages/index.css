@@ -26,7 +26,7 @@
 @import url(../blocks/element/__block/element__block.css);
 @import url(../blocks/element/__title/element__title.css);
 @import url(../blocks/element/__button/element__button.css);
-@import url(../blocks/element/__button_active/element__button_active.css);
+@import url(../blocks/element/__button/_active/element__button_active.css);
 
 /* footer */
 @import url(../blocks/footer/footer.css);

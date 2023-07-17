@@ -8,7 +8,7 @@ const jobInput = document.querySelector('.popup__input_job_status');
 const profileName = document.querySelector('.profile__name')
 const profileProfession = document.querySelector('.profile__profession');
 const popupForm = document.querySelector('.popup__content');
-const heartIconActive = document.querySelector('.element__button_active');
+
 
 
 function handleClick(evt) {

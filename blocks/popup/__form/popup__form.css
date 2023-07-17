@@ -1,4 +1,5 @@
 .popup__form {
+    width: 358px;
     border: 0;
     font-family: 'Inter', Arial, sans-serif;
     font-style: normal;
@@ -8,7 +9,7 @@
     color: #000;
     display: grid;
     grid-template-columns: 1fr;
-    gap: 37px;
+    gap: 30px;
 }
 
 
