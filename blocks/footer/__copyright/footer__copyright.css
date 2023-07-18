@@ -2,20 +2,17 @@
   max-width: 318px;
   min-height: 18px;
   margin: 0;
-  
-
-  font-family: 'Inter', 'Arial', 'Sans-serif';
+  font-family: "Inter", "Arial", "Sans-serif";
   font-style: normal;
   font-weight: 400;
   font-size: 18px;
   line-height: 22px;
-
   color: #545454;
 }
 
 @media screen and (max-width: 750px) {
   .footer__copyright {
-    font-size: 14px;
-    line-height: 17px;
-}
+      font-size: 14px;
+      line-height: 17px;
+  }
 }
