@@ -1,7 +1,6 @@
 .element {
-  flex-direction: column;
-  max-width: 282px;
-  border-radius: 10px;
-  background: #FFFFFF;
-  overflow: hidden;
+    max-width: 282px;
+    border-radius: 10px;
+    background-color: white;
+    overflow: hidden;
 }

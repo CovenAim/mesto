@@ -1,0 +1,18 @@
+.element__group-button {
+    width: 24px;
+    height: 19px;
+    cursor: pointer;
+    border: none;
+    display: flex;
+    background: transparent;
+    background-repeat: no-repeat;
+    background-position: 0;
+    background-image: url('../../../images/favorite.svg');
+}
+
+
+.element__group-button:hover {
+    opacity: 0.5;
+}
+
+

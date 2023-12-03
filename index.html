@@ -2,108 +2,84 @@
 <html lang="ru">
 
 <head>
-  <meta charset="UTF-8">
-  <link href="./pages/index.css" rel="stylesheet">
-  <title>Место</title>
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./pages/index.css" type="text/css">
+    <link rel="icon" href="./images/favicon.ico">
+    <script src="./scripts/card.js" defer></script>
+    <script src="./scripts/index.js" defer></script>
+    <title>MESTO Russia</title>
 </head>
 
-<body class="page">
-  <header class="header">
-    <img class="header__logo" src="./images/logo.svg" alt="Логотип Место">
-  </header>
-  <main class="content">
-    <section class="profile">
-      <img class="profile__avatar" src="./images/Avatar.png" alt="Жан-Ив Кусто фото профиля">
-
-      <div class="profile__info">
-        <div class="profile__button-panel">
-          <h1 class="profile__name">Жак-Ив Кусто</h1>
-          <button type="button" class="profile__edit-button"></button>
+<body class="body">
+    <div class="page">
+        <header class="header">
+            <a href="/" class="header__logo"><img src="./images/logo.svg" alt="Место - Россия"
+                    class="header__logo-image" /></a>
+        </header>
+        <main class="content">
+            <section class="profile">
+                <img class="profile__avatar" src="./images/Avatar.jpg" alt="Жан-Ив Кусто фото профиля" />
+                <div class="profile__info">
+                    <h1 class="profile__info-name">Жак-Ив Кусто</h1>
+                    <p class="profile__info-description">Исследователь океана</p>
+                    <button type="button" class="profile__info-edit-button"><img src="./images/editButton.svg"
+                            class="profile__info-edit-button-image" alt="Редактирование кнопка" /></button>
+                </div>
+                <button type="button" class="profile__add-button"><img src="./images/plus.svg" alt="Добавление"
+                        class="profile__add-button-image" /></button>
+            </section>
+            <section class="elements">
+                <template id="template-elements">
+                    <article class="element">
+                        <img class="element__delete-button" src="../../../images/Trash.svg" alt="иконка корзины"/>
+                        <img class="element__image" />
+                        <div class="element__group">
+                            <h2 class="element__group-title"></h2>
+                            <button class="element__group-button" type="button">
+                        </button>
+                        </div>
+                    </article>
+                </template>
+            </section>
+        </main>
+        <footer class="footer">
+            <p class="footer__copyright">© 2023 Mesto Russia</p>
+        </footer>
+        <div class="popup popup_form_edit">
+            <div class="popup-container">
+                <button type="button" class="popup-container__close-button popup-close"></button>
+                <h2 class="popup-container__title">Редактировать профиль</h2>
+                <form name="edit-form" class="edit-form">
+                    <input type="text" name="name" value="Жак-Ив Кусто"
+                        class="edit-form__text edit-form__text_input_name">
+                    <input type="text" name="description" value="Исследователь океана"
+                        class="edit-form__text edit-form__text_input_description">
+                    <button type="submit" class="edit-form__container-button">Сохранить</button>
+                </form>
+            </div>
         </div>
-        <p class="profile__profession">Исследователь океана</p>
-      </div>
-      <button type="button" class="profile__add-button"></button>
-    </section>
-
-    <section class="elements">
-      <article class="element">
-        <img class="element__image " src="./images/Burg_Eltz.jpg" alt="Замок Бург Эльц">
-        <div class="element__block">
-          <h2 class="element__title">Бург Эльц</h2>
-          <button class="element__button" type="button">
-          </button>
+        <div class="popup popup_form_add">
+            <div class="popup-container">
+                <button type="button" class="popup-container__add-popup-close-button popup-close"></button>
+                <h2 class="popup-container__title">Новое место</h2>
+                <form name="add-form" class="add-form">
+                    <input type="text" placeholder="Название" class="add-form__text add-form__text_input_title">
+                    <input type="url" placeholder="Ссылка на картинку" class="add-form__text add-form__text_input_url">
+                    <button type="submit" class="add-form__container-button">Создать</button>
+                </form>
+            </div>
         </div>
-      </article>
-
-      <article class="element">
-        <img class="element__image" src="./images/Baikal_Russia.jpg" alt="Озеро Байкал">
-        <div class="element__block">
-          <h2 class="element__title">Байкал</h2>
-          <button class="element__button" type="button">
-          </button>
+        <div class="popup popup_form_image">
+            <div class="popup-image-container">
+                <img class="popup-image-container__image-fullscreen" alt="" />
+                <h2 class="popup-image-container__title-fullscreen"></h2>
+                <button class="popup-image-container__close-button popup-close" type="button"></button>
+            </div>
         </div>
-      </article>
-
-      <article class="element">
-        <img class="element__image" src="./images/Faroe_Islands.jpg" alt="Фарерские острова">
-        <div class="element__block">
-          <h2 class="element__title">Фарерские острова</h2>
-          <button class="element__button" type="button">
-          </button>
-        </div>
-      </article>
-
-      <article class="element">
-        <img class="element__image" src="./images/Krabi_Thailand.jpg" alt="Краби, Тайланд">
-        <div class="element__block">
-          <h2 class="element__title">Тайланд</h2>
-          <button class="element__button" type="button">
-          </button>
-        </div>
-      </article>
-
-      <article class="element">
-        <img class="element__image" src="./images/Overton_USA.jpg" alt="Овертон, США">
-        <div class="element__block">
-          <h2 class="element__title">США</h2>
-          <button class="element__button" type="button">
-          </button>
-        </div>
-      </article>
-
-      <article class="element">
-        <img class="element__image" src="./images/Saudi_Arabia.jpg" alt="Саудовская Аравия">
-        <div class="element__block">
-          <h2 class="element__title">Саудовская Аравия</h2>
-          <button class="element__button" type="button">
-          </button>
-        </div>
-      </article>
-    </section>
-  </main>
-
-  <footer class="footer">
-    <p class="footer__copyright">© 2023 Mesto Russia</p>
-  </footer>
-  <div class="popup">
-    <div class="popup__content">
-      <button type="button" class="popup__close-button"></button>
-      <h3 class="popup__title">Редактировать профиль</h3>
-  
-      <form class="popup__form" action="/" name="form">
-  
-        <input class="popup__input popup__input_type_name" type="text" placeholder="Введите Имя" id="name" name="name"
-          value="#">
-  
-        <input class="popup__input popup__input_type_description" type="text" placeholder="Введите род занятий" id="job" name="job"
-          value="#">
-  
-        <button type="submit" class="popup__submit-button">Сохранить</button>
-      </form>
     </div>
-  </div>
-  <script src="./script/index.js"></script>
-  </body>
-  
-  </html>
+
+</body>
+
+</html>
