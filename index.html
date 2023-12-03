@@ -1,51 +1,49 @@
 <!DOCTYPE html>
 <html lang="ru">
-
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="./pages/index.css" type="text/css">
+    <link  rel="stylesheet" href="./pages/index.css" type="text/css">
     <link rel="icon" href="./images/favicon.ico">
-    <script src="./scripts/validate.js" defer></script>
-    <script src="./scripts/card.js" defer></script>
-    <script src="./scripts/index.js" defer></script>
+    <script type="module" src="./scripts/validate.js" defer></script>
+    <script type="module" src="./scripts/index.js" defer></script>
+    <script type="module" src="./scripts/cards.js" defer></script>
     <title>MESTO Russia</title>
 </head>
-
 <body class="body">
     <div class="page">
         <header class="header">
-            <a href="/" class="header__logo"><img src="./images/logo.svg" alt="Место - Россия"
-                    class="header__logo-image" /></a>
+            <a href="/" class="header__logo"><img src="./images/logo.svg" alt="Место - Россия" class="header__logo-image" /></a>
         </header>
         <main class="content">
             <section class="profile">
-                <img class="profile__avatar" src="./images/Avatar.jpg" alt="Жан-Ив Кусто фото профиля" />
+                <img class="profile__avatar" src="./images/Avatar.jpg" alt="Жак Ив Кусто" />
                 <div class="profile__info">
                     <h1 class="profile__info-name">Жак-Ив Кусто</h1>
                     <p class="profile__info-description">Исследователь океана</p>
-                    <button type="button" class="profile__info-edit-button"><img src="./images/editButton.svg"
-                            class="profile__info-edit-button-image" alt="Редактирование кнопка" /></button>
+                    <button type="button" class="profile__info-edit-button"><img src="./images/editButton.svg" class="profile__info-edit-button-image" alt="Редактирование кнопка" /></button>
                 </div>
-                <button type="button" class="profile__add-button"><img src="./images/plus.svg" alt="Добавление"
-                        class="profile__add-button-image" /></button>
+                <button type="button" class="profile__add-button"><img src="./images/plus.svg" alt="Добавление" class="profile__add-button-image" /></button>
             </section>
             <section class="elements">
-                <template id="template-elements">
-                    <article class="element">
-                        <img class="element__delete-button" src="../../../images/Trash.svg" alt="иконка корзины"/>
-                        <img class="element__image" />
-                        <div class="element__group">
-                            <h2 class="element__group-title"></h2>
-                            <button type="button" class="element__group-button"><img
-                                    class="element__group-favorite" /></button>
-                        </div>
-                    </article>
-                </template>
+            <template id="template-elements">
+                <article class="element">
+                    <button type="button" class="element__delete-button">
+                        <img class="element__image-delete" src="./images/Trash.svg" alt="Кнопка удаления" />
+                    </button>
+                    <img class="element__image" />
+                    <div class="element__group">
+                        <h2 class="element__group-title"></h2>
+                        <button type="button" class="element__group-button">
+                            <img class="element__group-favorite" src="./images/favorite.svg" alt="Избранное" />
+                        </button>
+                    </div>
+                </article>
+            </template>
             </section>
         </main>
-        <footer class="footer">
+        <footer class="footer" aria-label="футер">
             <p class="footer__copyright">© 2023 Mesto Russia</p>
         </footer>
         <div class="popup popup_form_edit">
@@ -54,15 +52,11 @@
                 <h2 class="popup-container__title">Редактировать профиль</h2>
                 <form name="edit-form" class="edit-form popup__form" novalidate>
                     <label class="popup__label">
-                        <input type="text" id="name" name="name" value="Жак-Ив Кусто"
-                            class="edit-form__text edit-form__text_input_name popup__input" minlength="2" maxlength="40"
-                            required>
+                        <input type="text" id="name" name="name" value="Жак-Ив Кусто" class="edit-form__text edit-form__text_input_name popup__input" minlength="2" maxlength="40" required>
                         <span class="name-error popup__input-error"></span>
                     </label>
                     <label class="popup__label">
-                        <input type="text" id="description" name="description" value="Исследователь океана"
-                            class="edit-form__text edit-form__text_input_description popup__input" minlength="2"
-                            maxlength="200" required>
+                        <input type="text" id="description"  name="description" value="Исследователь океана" class="edit-form__text edit-form__text_input_description popup__input" minlength="2" maxlength="200" required>
                         <span class="description-error popup__input-error"></span>
                     </label>
                     <button type="submit" class="edit-form__container-button popup__button">Сохранить</button>
@@ -75,14 +69,11 @@
                 <h2 class="popup-container__title">Новое место</h2>
                 <form name="add-form" class="add-form popup__form" novalidate>
                     <label class="popup__label">
-                        <input type="text" id="name-place" name="name-place" placeholder="Название"
-                            class="add-form__text add-form__text_input_title popup__input" minlength="2" maxlength="40"
-                            required>
+                        <input type="text" id="name-place" name="name-place"  placeholder="Название" class="add-form__text add-form__text_input_title popup__input" minlength="2" maxlength="40" required>
                         <span class="name-place-error popup__input-error"></span>
                     </label>
                     <label class="popup__label">
-                        <input type="url" name="url" id="url" placeholder="Ссылка на картинку"
-                            class="add-form__text add-form__text_input_url popup__input" required>
+                        <input type="url" name="url" id="url" placeholder="Ссылка на картинку" class="add-form__text add-form__text_input_url popup__input" required>
                         <span class="url-error popup__input-error"></span>
                     </label>
                     <button type="submit" class="add-form__container-button popup__button">Создать</button>
@@ -97,7 +88,6 @@
             </div>
         </div>
     </div>
-
+    
 </body>
-
 </html>

@@ -1,0 +1,14 @@
+.element__group-favorite {
+    width: 24px;
+    height: 19px;
+    cursor: pointer;
+    /* background-image: url('../../../images/favorite.svg');
+    background-repeat: no-repeat;
+    background-size: cover; */
+    }
+
+
+
+.element__group-favorite:hover {
+    opacity: 0.5;
+}
