@@ -52,7 +52,15 @@ const initialCards = [
 
   const closeButtons = document.querySelectorAll('.popup-close') //Поиск всех кнопок закрытия попапов
 
-  
+  const optionsApi = { 
+    url: 'https://mesto.nomoreparties.co/v1/cohort-77', 
+    headers: {
+      authorization: '43b2e2cc-8a7b-4ed3-960a-60ded3da371d',
+      'Content-Type': "application/json"
+    }
+  };
+
+
   export {
     initialCards,
     validationConfig,
@@ -67,5 +75,6 @@ const initialCards = [
     nameElement,
     urlElement,
     inputName,
-    inputDescription
+    inputDescription,
+    optionsApi
   };
